@@ -5,10 +5,10 @@
         v-if="navLayout === 'left'"
         :theme="navTheme"
         v-model="collapsed"
-        style="width: 256px"
+        width='256px'
       >
         <div class="logo">Vue Admin Pro</div>
-        <SideBar />
+        <SideBar :theme="navTheme"/>
       </a-layout-sider>
       <a-layout>
         <a-layout-header style="background-color:#fff;padding: 0;">
