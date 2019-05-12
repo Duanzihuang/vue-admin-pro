@@ -13,6 +13,7 @@
       <a-layout>
         <a-layout-header style="background-color:#fff;padding: 0;">
           <a-icon
+            v-auth="['admin']"
             class="trigger"
             :type="collapsed ? 'menu-unfold':'menu-fold'"
             @click="collapsed = !collapsed"
@@ -28,7 +29,9 @@
       </a-layout>
     </a-layout>
     <!-- 右边设置的抽屉效果 -->
-    <SettingDrawer />
+    <Authorized :authority="['admin']">
+      <SettingDrawer />
+    </Authorized>
   </div>
 </template>
 
