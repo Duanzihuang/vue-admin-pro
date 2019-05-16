@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { notification, Divider } from 'ant-design-vue'
+import { notification } from 'ant-design-vue'
 
 function request(options) {
   return axios(options)

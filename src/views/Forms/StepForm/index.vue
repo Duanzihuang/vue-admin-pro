@@ -1,5 +1,5 @@
 <template>
     <div>
-        分步表单
+        <router-view></router-view>
     </div>
 </template>
