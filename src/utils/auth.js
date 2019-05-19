@@ -6,7 +6,7 @@ export function getCurrentAuthority(){
 export function check(authority){
     const current = getCurrentAuthority()
     const isCheck = current.some(item => authority.includes(item))
-    console.log(authority,isCheck)
+    // console.log(authority,isCheck)
     return isCheck
 }
 

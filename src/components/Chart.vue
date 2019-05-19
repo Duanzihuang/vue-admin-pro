@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     resize() {
-      console.log('resize')
+      // console.log('resize')
       // 重绘图表
       this.myChart.setOption(this.option)
     },

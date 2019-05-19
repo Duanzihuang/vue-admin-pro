@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!-- <a-calendar :fullscreen="false"></a-calendar> -->
+    {{$t("message")["app.dashboard.analysis.timeLabel"]}}&nbsp;&nbsp;
+    <a-date-picker></a-date-picker>
     <Chart
       :option="chartOption"
       style="height:400px;"
@@ -22,9 +25,9 @@ export default {
     }
   },
   created() {
-    this.getChartOptionData()
+    // this.getChartOptionData()
     this.interval = setInterval(() => {
-      this.getChartOptionData()
+      // this.getChartOptionData()
       /**
           this.chartOption.series[0].data = this.chartOption.series[0].data.map(()=>random(100))
           
